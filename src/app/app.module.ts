@@ -1,13 +1,13 @@
 import { BrowserModule }        from '@angular/platform-browser';
 import { NgModule }             from '@angular/core';
 import { AppComponent }         from './app.component';
-import { InputComponent }   from './input.component';
+import { InputComponent }   from './components/input.component';
 
-import { TextComponent } from './text.component';
+import { TextComponent } from './components/text.component';
 import { AdDirective }          from './ad.directive';
 import {FormsModule} from "@angular/forms";
 import {LegoItemComponent} from "./lego-item.component";
-import {LegoComponent} from "./lego.component";
+import {LegoComponent} from "./components/lego.component";
 
 @NgModule({
   imports: [ BrowserModule, FormsModule ],
@@ -18,7 +18,7 @@ import {LegoComponent} from "./lego.component";
                   InputComponent,
                   TextComponent,
                   AdDirective ],
-  entryComponents: [ InputComponent, TextComponent ],
+  entryComponents: [ InputComponent, TextComponent, LegoComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

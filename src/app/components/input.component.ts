@@ -1,16 +1,11 @@
 import { Component, Input } from '@angular/core';
 
-import { AdComponent }      from './ad.component';
+import { AdComponent }      from '../ad.component';
 
 @Component({
   template: `
-    <div class="job-ad">
-      <h4>{{elem.headline}}</h4> 
-      
-      {{elem.body}}
+      <h4>Input: {{elem.headline}}</h4> 
       <input [(ngModel)]="elem.headline" >
-
-    </div>
   `
 })
 export class InputComponent implements AdComponent {

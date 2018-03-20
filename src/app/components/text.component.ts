@@ -1,17 +1,10 @@
 import { Component, Input }  from '@angular/core';
 
-import { AdComponent }       from './ad.component';
+import { AdComponent }       from '../ad.component';
 
 @Component({
   template: `
-    <div class="hero-profile">
-      <h3>Featured Hero Profile</h3>
-      <h4>{{elem.name}}</h4>
-      
-      <p>{{elem.bio}}</p>
-
-      <strong>Hire this hero today!</strong>
-    </div>
+      <h3>TEXT: {{elem.name}}</h3>
   `
 })
 export class TextComponent implements AdComponent {
